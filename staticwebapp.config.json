@@ -13,6 +13,10 @@
       "redirect": "https://www.youtube.com/channel/UCgSndmVZGTrbrga78HzR5zA"
     },
     {
+      "route": "/humble",
+      "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
+    },
+    {
       "route": "/schedule",
       "rewrite": "/schedule.html"
     }
