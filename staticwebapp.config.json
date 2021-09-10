@@ -29,6 +29,10 @@
       "redirect": "https://www.instagram.com/zunderscore"
     },
     {
+      "route": "/amazon",
+      "redirect": "https://www.amazon.com/?tag=zunderscore-20"
+    },
+    {
       "route": "/humble",
       "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
     }
