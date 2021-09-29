@@ -31,6 +31,10 @@
     {
       "route": "/humble",
       "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
+    },
+    {
+      "route": "/steam",
+      "redirect": "https://steamcommunity.com/id/zunderscore"
     }
   ]
 }
