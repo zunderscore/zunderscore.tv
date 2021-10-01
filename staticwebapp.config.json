@@ -45,6 +45,10 @@
       "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
     },
     {
+      "route": "/patreon",
+      "redirect": "https://www.patreon.com/zunderscore"
+    },
+    {
       "route": "/xbox",
       "redirect": "https://account.xbox.com/en-us/profile?gamertag=zunderscore"
     },
