@@ -13,6 +13,10 @@
       "rewrite": "/schedule.html"
     },
     {
+      "route": "/store",
+      "rewrite": "https://store.zunderscore.tv/"
+    },
+    {
       "route": "/discord",
       "redirect": "https://discord.gg/SgRS43thZM"
     },
@@ -29,12 +33,20 @@
       "redirect": "https://www.instagram.com/zunderscore"
     },
     {
+      "route": "/soundcloud",
+      "redirect": "https://soundcloud.com/zunderscore"
+    },
+    {
       "route": "/amazon",
       "redirect": "https://www.amazon.com/?tag=zunderscore-20"
     },
     {
       "route": "/humble",
       "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
+    },
+    {
+      "route": "/xbox",
+      "redirect": "https://account.xbox.com/en-us/profile?gamertag=zunderscore"
     },
     {
       "route": "/steam",
