@@ -38,7 +38,7 @@
     },
     {
       "route": "/amazon",
-      "redirect": "https://www.amazon.com/?tag=zunderscore-20"
+      "redirect": "https://www.amazon.com/?tag=zunderscore0d-20"
     },
     {
       "route": "/humble",
