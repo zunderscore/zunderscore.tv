@@ -9,8 +9,12 @@
       "redirect": "https://twitch.tv/zunderscore"
     },
     {
-      "route": "/schedule",
+      "route": "/schedule/",
       "rewrite": "/schedule.html"
+    },
+    {
+      "route": "/links/",
+      "rewrite": "/links.html"
     },
     {
       "route": "/store",
