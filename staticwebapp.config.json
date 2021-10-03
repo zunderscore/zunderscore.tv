@@ -57,6 +57,10 @@
       "redirect": "https://account.xbox.com/en-us/profile?gamertag=zunderscore"
     },
     {
+      "route": "/gamepass",
+      "redirect": "https://amzn.to/3D3dGRU"
+    },
+    {
       "route": "/steam",
       "redirect": "https://steamcommunity.com/id/zunderscore"
     }
