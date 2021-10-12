@@ -37,6 +37,10 @@
       "redirect": "https://www.instagram.com/zunderscore"
     },
     {
+      "route": "/teams",
+      "redirect": "https://teams.live.com/l/invite/FAAtnDfmbHDK2haWwI"
+    },
+    {
       "route": "/soundcloud",
       "redirect": "https://soundcloud.com/zunderscore"
     },
