@@ -49,6 +49,7 @@ header {
   .menu > li > a {
     text-decoration: none;
     font-weight: bold;
+    font-size: 18pt;
     color: #fff;
   }
   
@@ -217,9 +218,6 @@ a {
       align-items: center;
     }
   
-    .menu li a {
-      font-size: 1.2em;
-    }
   
     #menu-toggle ~ .menu li {
       height: 0;
@@ -251,7 +249,7 @@ a {
       padding: 0.5em 0;
       width: 100%;
       color: white;
-      background-color: #00000099;
+      background-color: #000000EE;
     }
 
     .main-player-frame {
@@ -263,17 +261,17 @@ a {
     }
 
     .link-icon-image {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
     }
 
     .link-icon-image.small {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
     }
 
     .link-text {
-        font-size: 28pt;
-        width: 320px;
+        font-size: 20pt;
+        width: 240px;
     }
-  }
+}
