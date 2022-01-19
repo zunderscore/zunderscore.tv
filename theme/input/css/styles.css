@@ -119,8 +119,9 @@ header {
 
 .main-player-frame {
     width: 80%;
-    aspect-ratio: 16 / 9;
-    max-height: 600px;
+    max-width: 800px;
+    max-height: 450px;
+    aspect-ratio: 16 / 9 !important;
 }
 
 .player-sub-text {
@@ -129,7 +130,7 @@ header {
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
