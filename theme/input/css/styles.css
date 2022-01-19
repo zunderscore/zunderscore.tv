@@ -197,19 +197,29 @@ a {
 
 @media (max-width: 700px) {
     body {
+        padding: 40px 0 10px 0;
         padding-left: 0;
         padding-right: 0;
     }
 
+    header {
+        height: 40px;
+    }
+
+    .page-title {
+        margin-left: 10px;
+        font-size: 24pt;
+    }
+
     .menu-button-container {
       display: flex;
-      margin-right: 20px;
+      margin-right: 10px;
     }
   
     .menu {
       position: absolute;
       top: 0;
-      margin-top: 60px;
+      margin-top: 40px;
       left: 0;
       flex-direction: column;
       width: 100%;
@@ -273,5 +283,38 @@ a {
     .link-text {
         font-size: 20pt;
         width: 240px;
+    }
+}
+
+@media (max-width: 400px) {
+    #menu-toggle:checked ~ .menu li {
+        height: 2em;
+    }
+    
+    .player-title {
+        font-size: 18pt;
+    }
+
+    .player-sub-text {
+        font-size: 14pt;
+    }
+
+    footer {
+        font-size: 10pt;
+    }
+
+    .link-icon-image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .link-icon-image.small {
+        width: 30px;
+        height: 30px;
+    }
+
+    .link-text {
+        font-size: 16pt;
+        width: 200px;
     }
 }
