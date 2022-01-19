@@ -1,0 +1,169 @@
+@import url("https://use.typekit.net/peq1fqe.css");
+
+body {
+    margin: 60px 0 20px 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    fill: #fff;
+    font-family: bebas-neue-pro, sans-serif;
+}
+
+.page-title {
+    font-size: 36pt;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.page-title > a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+  }
+  
+  .menu > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4db1ac;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(45deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+  }
+
+.main-player {
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.player-sub-text {
+    margin-top: 10px;
+    font-size: 18pt;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+.linkContainer {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.linkContainer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkIcon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.linkIconImage {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+}
+
+    .linkIconImage.small {
+        width: 80px;
+        height: 80px;
+    }
+
+.linkText {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 32pt;
+    width: 400px;
+}
+
+.store-iframe {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    min-height: 600px;
+    background-color: #000;
+    color: #fff;
+}
