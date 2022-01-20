@@ -1,10 +1,6 @@
 {
   "routes": [
     {
-      "route": "/",
-      "redirect": "https://twitch.tv/zunderscore"
-    },
-    {
       "route": "/twitch",
       "redirect": "https://twitch.tv/zunderscore"
     },
