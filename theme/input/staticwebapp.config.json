@@ -55,6 +55,10 @@
     {
       "route": "/steam",
       "redirect": "https://steamcommunity.com/id/zunderscore"
+    },
+    {
+      "route": "/mediakit",
+      "redirect": "/docs/zunderscore Media Kit.pdf"
     }
   ]
 }
