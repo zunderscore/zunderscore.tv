@@ -6,7 +6,7 @@
     },
     {
       "route": "/store",
-      "rewrite": "https://store.zunderscore.tv/"
+      "redirect": "https://store.zunderscore.tv/"
     },
     {
       "route": "/discord",
@@ -58,7 +58,7 @@
     },
     {
       "route": "/mediakit",
-      "redirect": "/docs/zunderscore Media Kit.pdf"
+      "rewrite": "/docs/zunderscore%20Media%20Kit.pdf"
     }
   ]
 }
