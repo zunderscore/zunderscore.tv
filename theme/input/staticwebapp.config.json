@@ -58,7 +58,7 @@
     },
     {
       "route": "/mediakit",
-      "rewrite": "/docs/zunderscore%20Media%20Kit.pdf"
+      "rewrite": "/docs/mediakit.pdf"
     }
   ]
 }
