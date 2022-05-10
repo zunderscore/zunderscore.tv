@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/zunderscore
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zunderscore.tv
+  * I am zunderscore (https://keybase.io/zunderscore) on keybase.
+  * I have a public key with fingerprint 8125 BFB8 D9F1 786F 5503  40F2 16E9 68D3 B568 A2B0
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d1ca9c1bb31e7488efc0a8793757872796909d3b09827460035b54a0ad198b8d0a",
+      "fingerprint": "8125bfb8d9f1786f550340f216e968d3b568a2b0",
+      "host": "keybase.io",
+      "key_id": "16e968d3b568a2b0",
+      "kid": "01012326752294198fffdad92603392e11fb36188eac570c7f2bec7a03fd39f1e41a0a",
+      "uid": "8e922c4b0821464273069870e6097219",
+      "username": "zunderscore"
+    },
+    "service": {
+      "hostname": "zunderscore.tv",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1652201976,
+  "expire_in": 157680000,
+  "prev": "184b6101400310046543394a2b7873e7146f04ac76d2b4681d3ab6178436f9ae",
+  "seqno": 25,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNoAnicbVJ7UBVVHL6AMgIhaIANyjhs4zDKw7Pv3RupFRlIU6TmC/S2j7PcHW53
+L/fF+1EyGJoWoCLxmIHEUKChaYhRGxMhUi+BRI6VQG8CSwptCFGos0z+VeefnbO/
+7/vO933n9AT6GPy9wibMQx3mxnYvT1edyyDmVs/kYaIm52DGPCwDLnygRYYOpylD
+lTEjBnACyLgk8BIuiiQOWYrjoCIBgWN5kqVZjiVYnuEBL5Mi4DmCpRgASFqkKQEI
+Ms5zIicDAYvBFNWaDu02u2p1IlkOJ2hRQTNewVmOUWgakBRQCJyBPMMhLZrhBEIE
+iGjWHDoDmRMFB4xTNfQPbUwL9v4H/9A3ck4SDEsTBE8hH4qiyILMEwwgSZ6AOK6I
+JIOjMIJEs0BiFUKEEisAUpFJZApSuLDg27Ugx0GeICRKBByBUwxFsCRgeI4FkAE8
+S+C8DnRAu1V4FSJ0rssqQ7tD0uwQK4jB0MCtSlDvVg/zX1Cc040EbHbNqUmaBc3M
+TqfNYdS5zhybDs6CoulfGZOoWmVUJmK4EV/VrJgRR0jJqeq6OIMSA5xnmRgMZttU
+OzSpOoJmGQ6gpZ8D3Xp1HCUyqCUK3RcOAMXQFGqGQi2iSyUhi3IqgBIklpEJkWI4
+XCYFRGA5imQUXoCYHizTqmFGgkY+hXSk6VDTrYLTpce+1JW2yODlb/Bd7K2/MoO/
+X/DDt1dJBBua8rOVzsqfRiKeL/10X4XVs2MT9uiipPH4qPP7x98ICzjcOnjqt+An
+2Z17rl5wFk48EaXdcx19GbvbuLlnX4PJp6Zl4K8D7tTZ4sx7ftuqz/4ZOxjaz6Z1
+3F68zJN7zGA+0hfeubuhxjF9q/r4ZV/Y6l61vPjITuqgZ3/J2hXOxMMJYx8Eru5i
+0757x9hTH3nWu7x3Q8cjcvxIDJY6f6xvTdvY8PSqpNNVVb3nXjMvLbs0EAQnsyJD
+fDakBreZGqLUpd/bM66emK/f3r1S3OEVFl0dk946V5D1dvTa9qdme7tnBufrPold
+VxH9mVx3Mflm0v2PbD88V3GqNtPd03whKMB4sbR89dj0THlTODx67fSHiZ0JXxUv
+q33ae2p3xYNn1vltnbIQdVc+X0I2F27b9M23dWWe/mjL8q6seOo6tfKFM2+1ndOa
+/i640RI02pcSmuL784MvNp7YdSixklzhILaUFM2mvX8lfHxv9ouNfMsr3e2/9yZ3
+pP9xJulO8bt7b44N+cOSgLuTZSPgvaD8NWE+w2/O5s3F9zfeXh+B1Sxx0VrI5YSq
+oV/wj9u21Bd1vbRHHT8eIYLByKTJ0pOj9J3Xa9vyh4t+pTxfPjv09cn7ofMHY689
+3jyVQKw3bCw8cB0vvrF1V7KFMU805rCBcY+FzA0xfbfmUra7tFHbZPr5H4eLDhkl
+y0BAeHjuP/hew1s=
+=3O5q
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zunderscore
+
+==================================================================
