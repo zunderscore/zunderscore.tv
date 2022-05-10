@@ -45,6 +45,14 @@
       "redirect": "https://www.patreon.com/zunderscore"
     },
     {
+      "route": "/ko-fi",
+      "redirect": "https://ko-fi.com/zunderscore"
+    },
+    {
+      "route": "/kofi",
+      "rewrite": "/ko-fi"
+    },
+    {
       "route": "/xbox",
       "redirect": "https://account.xbox.com/en-us/profile?gamertag=zunderscore"
     },
