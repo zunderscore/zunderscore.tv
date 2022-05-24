@@ -53,6 +53,10 @@
       "rewrite": "/ko-fi"
     },
     {
+      "route": "/nexus",
+      "redirect": "https://www.nexus.gg/zunderscore"
+    },
+    {
       "route": "/xbox",
       "redirect": "https://account.xbox.com/en-us/profile?gamertag=zunderscore"
     },
