@@ -2,7 +2,83 @@ Title: "#zunderstream Schedule"
 Description: "Check out what's coming up soon on the #zunderstream"
 ---
 <div class="content-title">#zunderstream Schedule</div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css"/>
+<style>
+    :root {
+        --fc-page-bg-color: #000;
+        --fc-list-event-hover-bg-color: #222 !important;
+        --fc-button-bg-color: #06f;
+        --fc-button-border-color: #06f;
+    }
+
+    #calendar {
+        font-size: 1em;
+    }
+
+    .fc-toolbar-title,
+    .fc-col-header-cell,
+    .fc-list-day,
+    .fc-list-empty,
+    .fc-button {
+        text-transform: uppercase !important;
+    }
+
+    .fc-col-header-cell,
+    .fc-list-day,
+    .fc-list-empty {
+        font-size: 1.6em;
+    }
+
+    .fc-event-time,
+    .fc-list-event-time {
+        font-weight: 300 !important;
+    }
+
+    .fc-event-title,
+    .fc-list-event-title {
+        font-weight: 400 !important;
+    }
+
+    .fc-event-time,
+    .fc-event-title {
+        font-size: 1.6em;
+    }
+
+    .fc-list-event-time,
+    .fc-list-event-title {
+        font-size: 1.25em;
+    }
+
+    .fc-daygrid-day-number {
+        font-size: 1.4em;
+    }
+
+    .fc-view {
+        background-color: #111;
+    }
+
+    .fc-event-time,
+    .fc-event-title {
+        padding: 0 1px;
+        white-space: normal;
+    }
+
+    @@media (max-width: 750px) {
+        #calendar {
+            padding: 0 20px;
+        }
+
+        .fc-toolbar-title {
+            font-size: 1.5em !important;
+        }
+
+        .fc-col-header-cell,
+        .fc-list-day,
+        .fc-list-empty {
+            font-size: 1.2em;
+        }
+    }
+</style>
 <script src='https://github.com/mozilla-comm/ical.js/releases/download/v1.4.0/ical.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@@fullcalendar/icalendar@5.11.0/main.global.min.js"></script>

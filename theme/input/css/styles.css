@@ -1,12 +1,4 @@
 @import url("https://use.typekit.net/peq1fqe.css");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-:root {
-    --fc-page-bg-color: #000;
-    --fc-list-event-hover-bg-color: #222 !important;
-    --fc-button-bg-color: #06f;
-    --fc-button-border-color: #06f;
-}
 
 body {
     margin: 0;
@@ -15,42 +7,6 @@ body {
     color: #fff;
     fill: #fff;
     font-family: 'bebas-neue-pro', sans-serif;
-}
-
-#calendar {
-    font-size: 1em;
-}
-
-.fc-toolbar-title,
-.fc-col-header-cell,
-.fc-list-day,
-.fc-list-empty,
-.fc-button {
-    text-transform: uppercase !important;
-}
-
-.fc-col-header-cell,
-.fc-list-day,
-.fc-list-empty {
-    font-size: 1.4em;
-}
-
-.fc-event {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.fc-daygrid-day-number {
-    font-size: 1.4em;
-}
-
-.fc-view {
-    background-color: #111;
-}
-
-.fc-event-time,
-.fc-event-title {
-    padding: 0 1px;
-    white-space: normal;
 }
 
 .page-title {
@@ -336,20 +292,6 @@ a {
     .link-text {
         font-size: 20pt;
         width: 240px;
-    }
-
-    #calendar {
-        padding: 0 20px;
-    }
-
-    .fc-toolbar-title {
-        font-size: 1.5em !important;
-    }
-
-    .fc-col-header-cell,
-    .fc-list-day,
-    .fc-list-empty {
-        font-size: 1.2em;
     }
 }
 
