@@ -1,38 +1,58 @@
 Title: "#zunderstream Schedule"
 Description: "Check out what's coming up soon on the #zunderstream"
 ---
-<div class="main-player">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
-    <script src='https://github.com/mozilla-comm/ical.js/releases/download/v1.4.0/ical.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@@fullcalendar/icalendar@5.11.0/main.global.min.js"></script>
-    <script>
+<div class="content-title">#zunderstream Schedule</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
+<script src='https://github.com/mozilla-comm/ical.js/releases/download/v1.4.0/ical.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@@fullcalendar/icalendar@5.11.0/main.global.min.js"></script>
+<script>
 
-        function getCalendarView() {
-            if (window.innerWidth < 1200) {
-                return 'listWeek';
-            } else {
-                return 'dayGridMonth';
-            }
+    const MIN_WINDOW_WIDTH = 1200;
+
+    function getCalendarView() {
+        if (window.innerWidth < MIN_WINDOW_WIDTH) {
+            return 'listWeek';
+        } else {
+            return 'dayGridMonth';
         }
+    }
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: getCalendarView(),
-                contentHeight: 'auto',
-                eventColor: '#003399',
-                events: {
-                    url: 'https://zunderscore-tv-functions.azurewebsites.net/api/fetch?url=https%3A%2F%2Foutlook.office365.com%2Fowa%2Fcalendar%2F08b2ecd6216c4394930d968e59d560de%40zunderscore.com%2Fd0eeea3042aa4247a447651790808a372990306075475830071%2Fcalendar.ics',
-                    format: 'ics'
-                },
-                windowResize: function () {
-                    calendar.changeView(getCalendarView());
-                }
-            });
-            calendar.render();
+    function getCalendarContentHeight() {
+        if (window.innerWidth < MIN_WINDOW_WIDTH) {
+            return 'auto';
+        } else {
+            return '720px';
+        }
+    }
+
+    function getCalendarAspectRatio() {
+        if (window.innerWidth < MIN_WINDOW_WIDTH) {
+            return 1.35;
+        } else {
+            return 1.35;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: getCalendarView(),
+            contentHeight: getCalendarContentHeight(),
+            aspectRatio: getCalendarAspectRatio(),
+            eventColor: '#003399',
+            events: {
+                url: 'https://zunderscore-tv-functions.azurewebsites.net/api/fetch?url=https%3A%2F%2Foutlook.office365.com%2Fowa%2Fcalendar%2F08b2ecd6216c4394930d968e59d560de%40zunderscore.com%2Fd0eeea3042aa4247a447651790808a372990306075475830071%2Fcalendar.ics',
+                format: 'ics'
+            },
+            windowResize: function () {
+                calendar.changeView(getCalendarView());
+                calendar.setOption('contentHeight', getCalendarContentHeight());
+                calendar.setOption('aspectRatio', getCalendarAspectRatio());
+            }
         });
+        calendar.render();
+    });
 
-    </script>
-    <div id='calendar'></div>
-</div>
+</script>
+<div id='calendar'></div>
