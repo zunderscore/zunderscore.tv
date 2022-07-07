@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/peq1fqe.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
     margin: 0;
@@ -6,7 +7,22 @@ body {
     background: #000;
     color: #fff;
     fill: #fff;
-    font-family: bebas-neue-pro, sans-serif;
+    font-family: 'bebas-neue-pro', sans-serif;
+}
+
+#calendar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.fc-event-time, .fc-event-title {
+    padding: 0 1px;
+    white-space: normal;
+}
+
+:root {
+    --fc-page-bg-color: #000;
+    --fc-list-event-hover-bg-color: #222 !important;
 }
 
 .page-title {
@@ -32,6 +48,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10000;
   }
   
   .menu {

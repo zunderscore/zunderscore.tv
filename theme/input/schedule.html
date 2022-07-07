@@ -2,5 +2,37 @@ Title: "#zunderstream Schedule"
 Description: "Check out what's coming up soon on the #zunderstream"
 ---
 <div class="main-player">
-    <iframe title="zunderstream Schedule" class="schedule-frame" src="https://outlook.office365.com/owa/calendar/08b2ecd6216c4394930d968e59d560de@zunderscore.com/d0eeea3042aa4247a447651790808a372990306075475830071/calendar.html"></iframe>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
+    <script src='https://github.com/mozilla-comm/ical.js/releases/download/v1.4.0/ical.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@fullcalendar/icalendar@5.11.0/main.global.min.js"></script>
+    <script>
+
+        function getCalendarView() {
+            if (window.innerWidth < 1200) {
+                return 'listWeek';
+            } else {
+                return 'dayGridMonth';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: getCalendarView(),
+                contentHeight: 'auto',
+                eventColor: '#003399',
+                events: {
+                    url: 'http://outlook.office365.com/owa/calendar/08b2ecd6216c4394930d968e59d560de@zunderscore.com/d0eeea3042aa4247a447651790808a372990306075475830071/calendar.ics',
+                    format: 'ics'
+                },
+                windowResize: function () {
+                    calendar.changeView(getCalendarView());
+                }
+            });
+            calendar.render();
+        });
+
+    </script>
+    <div id='calendar'></div>
 </div>
