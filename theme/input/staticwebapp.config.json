@@ -9,6 +9,10 @@
       "redirect": "https://store.zunderscore.tv/"
     },
     {
+      "route": "/merch",
+      "rewrite": "/store"
+    },
+    {
       "route": "/discord",
       "redirect": "https://discord.gg/SgRS43thZM"
     },
