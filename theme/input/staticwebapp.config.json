@@ -54,7 +54,7 @@
     },
     {
       "route": "/kofi",
-      "rewrite": "https://ko-fi.com/zunderscore"
+      "redirect": "https://ko-fi.com/zunderscore"
     },
     {
       "route": "/nexus",
