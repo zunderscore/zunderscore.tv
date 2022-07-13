@@ -1,0 +1,60 @@
+Title: The zunderstore
+---
+<style>
+    @@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+    .store-container {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+        .store-container > div {
+            max-width: 800px !important;
+            padding: 0 20px;
+        }
+
+    .horizontal-menu-item a {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+    }
+
+    .horizontal-menu--mobile {
+        margin-top: 80px;
+    }
+    
+    .product-details__product-description,
+    .product-details input,
+    .product-details select,
+    .product-details option,
+    .ec-header-h5,
+    .ec-header-h6,
+    .ec-store select,
+    .form-control__placeholder {
+        font-family: 'Open Sans', sans-serif !important;
+    }
+
+    .label__text {
+        color: #fff !important;
+    }
+</style>
+
+<div class="content-title">The zunderstore</div>
+
+<div class="store-container">
+    <div>
+        <div id="my-categories-76952513"></div>
+        <div id="my-store-76952513"></div>
+        <div>
+            <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?76952513&data_platform=code&data_date=2022-07-13" charset="utf-8"></script>
+            <script type="text/javascript">
+                xCategoriesV2("id=my-categories-76952513");
+                xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-76952513");
+            </script>
+        </div>
+    </div>
+</div>
