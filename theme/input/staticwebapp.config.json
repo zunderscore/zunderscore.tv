@@ -9,6 +9,10 @@
       "redirect": "https://store.zunderscore.tv/"
     },
     {
+      "route": "/merch",
+      "redirect": "https://store.zunderscore.tv/"
+    },
+    {
       "route": "/discord",
       "redirect": "https://discord.gg/SgRS43thZM"
     },
@@ -50,7 +54,7 @@
     },
     {
       "route": "/kofi",
-      "rewrite": "/ko-fi"
+      "redirect": "https://ko-fi.com/zunderscore"
     },
     {
       "route": "/nexus",
