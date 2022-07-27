@@ -11,6 +11,22 @@ Description: "Check out what's coming up soon on the #zunderstream"
         --fc-button-border-color: #06f;
     }
 
+    #loader {
+        display: flex;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #00000099;
+        visibility: hidden;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: 2em;
+    }
+
     #calendar {
         font-size: 1em;
     }
@@ -125,10 +141,21 @@ Description: "Check out what's coming up soon on the #zunderstream"
                 calendar.changeView(getCalendarView());
                 calendar.setOption('contentHeight', getCalendarContentHeight());
                 calendar.setOption('aspectRatio', getCalendarAspectRatio());
-            }
+            },
+            loading: function (isLoading) {
+                    if (isLoading) {
+                        document.getElementById('loader').style.visibility = "visible";
+                    }
+                    else {                
+                        document.getElementById('loader').style.visibility = "hidden";
+                    }
+                }
         });
         calendar.render();
     });
 
 </script>
-<div id='calendar'></div>
+<div id="loader">
+    <div>Loading schedule...</div>
+</div>
+<div id="calendar"></div>
