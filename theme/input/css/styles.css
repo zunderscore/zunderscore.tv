@@ -118,6 +118,14 @@ header {
     text-align: center;
 }
 
+.content-subtitle {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+}
+
 .main-player {
     width: 100%;
     text-align: center;
