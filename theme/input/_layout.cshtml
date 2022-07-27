@@ -31,6 +31,24 @@ else
 @if(Document.ContainsKey("TwitterPlayer"))
 {
     <meta name="twitter:player" content="@Document.GetString("TwitterPlayer")">
+
+    @if(Document.ContainsKey("TwitterPlayerWidth"))
+    {
+	    <meta name="twitter:player:width" content="@Document.GetString("TwitterPlayerWidth")" />
+    }
+    else
+    {
+	    <meta name="twitter:player:width" content="1280" />
+    }
+
+    @if(Document.ContainsKey("TwitterPlayerHeight"))
+    {
+	    <meta name="twitter:player:height" content="@Document.GetString("TwitterPlayerHeight")" />
+    }
+    else
+    {
+	    <meta name="twitter:player:height" content="720" />
+    }
 }
     <meta name="twitter:title" content="@Document.GetString("Title")">
     <meta name="twitter:image" content="https://zunderscore.tv/images/z_icon.png">
