@@ -13,18 +13,48 @@ Description: "Check out what's coming up soon on the #zunderstream"
 
     #loader {
         display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         z-index: 1000;
-        background-color: #00000099;
+        background-color: #000000CC;
         visibility: hidden;
         align-items: center;
         align-content: center;
         justify-content: center;
         font-size: 2em;
+    }
+    
+    #loader > div {
+        display: block;
+    }
+
+    .lds-dual-ring {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+    @@keyframes lds-dual-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
     #calendar {
@@ -156,6 +186,7 @@ Description: "Check out what's coming up soon on the #zunderstream"
 
 </script>
 <div id="loader">
+    <div class="lds-dual-ring"></div>
     <div>Loading schedule...</div>
 </div>
 <div id="calendar"></div>
