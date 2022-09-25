@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    padding: 60px 20px 20px 20px;
+    padding: 100px 20px 20px 20px;
     background: #000;
     color: #fff;
     fill: #fff;
@@ -11,7 +11,7 @@ body {
 
 .page-title {
     margin-left: 20px;
-    font-size: 36pt;
+    font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -50,7 +50,7 @@ header {
   .menu > li > a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 18pt;
+    font-size: 1.5em;
     color: #fff;
   }
 
@@ -112,7 +112,7 @@ header {
 .content-title {
     margin: 10px 0;
     width: 100%;
-    font-size: 24pt;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -121,7 +121,7 @@ header {
 .content-subtitle {
     margin: 10px 0;
     width: 100%;
-    font-size: 16pt;
+    font-size: 1.25em;
     font-weight: bold;
     text-align: center;
 }
@@ -141,7 +141,7 @@ header {
 
 .player-sub-text {
     margin-top: 10px;
-    font-size: 18pt;
+    font-size: 1.5em;
 }
 
 footer {
@@ -187,10 +187,33 @@ a {
 
 .link-text {
     display: inline-block;
+    padding: 0 5px;
     vertical-align: middle;
-    font-size: 32pt;
+    font-size: 2.25em;
     width: 400px;
 }
+
+.amazon {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+    .amazon .link-icon {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .amazon .link-icon-image {
+        display: inline-block;
+        width: 180px;
+        height: 180px;
+    }
+
+    .amazon .link-text {
+        font-size: 2em;
+    }
 
 .schedule-frame {
     border: none;
@@ -214,7 +237,7 @@ a {
 
 @media (max-width: 750px) {
     body {
-        padding: 40px 0 10px 0;
+        padding: 60px 0 10px 0;
         padding-left: 0;
         padding-right: 0;
     }
@@ -225,7 +248,7 @@ a {
 
     .page-title {
         margin-left: 10px;
-        font-size: 24pt;
+        font-size: 2em;
     }
 
     .menu-button-container {
@@ -298,7 +321,7 @@ a {
     }
 
     .link-text {
-        font-size: 20pt;
+        font-size: 1.5em;
         width: 240px;
     }
 }
@@ -309,19 +332,19 @@ a {
     }
 
     .menu > li > a {
-        font-size: 14pt;
+        font-size: 1.25em;
     }
 
     .content-title {
-        font-size: 18pt;
+        font-size: 1.5em;
     }
 
     .player-sub-text {
-        font-size: 14pt;
+        font-size: 1.25em;
     }
 
     footer {
-        font-size: 10pt;
+        font-size: 0.75em;
     }
     
     .link-container-bottom {
@@ -339,7 +362,7 @@ a {
     }
 
     .link-text {
-        font-size: 16pt;
+        font-size: 1.25em;
         width: 200px;
     }
 }

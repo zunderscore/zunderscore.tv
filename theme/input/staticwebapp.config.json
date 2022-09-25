@@ -33,10 +33,6 @@
       "redirect": "https://soundcloud.com/zunderscore"
     },
     {
-      "route": "/amazon",
-      "redirect": "https://www.amazon.com/?tag=zunderscore0d-20"
-    },
-    {
       "route": "/humble",
       "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
     },
