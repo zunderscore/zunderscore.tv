@@ -132,11 +132,25 @@ header {
     align-content: center;
 }
 
-.main-player-frame {
+.twitch-container {
     width: 80%;
-    max-width: 800px;
-    max-height: 450px;
+    margin: 0 auto;
+}
+
+.main-player-frame {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
     aspect-ratio: 16 / 9 !important;
+}
+
+.main-chat-frame {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    min-height: 400px;
 }
 
 .player-sub-text {
