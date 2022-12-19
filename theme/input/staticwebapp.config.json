@@ -17,6 +17,10 @@
       "redirect": "https://www.youtube.com/channel/UCgSndmVZGTrbrga78HzR5zA"
     },
     {
+      "route": "/mastodon",
+      "redirect": "https://mastodon.social/@zunderscore"
+    },
+    {
       "route": "/twitter",
       "redirect": "https://twitter.com/zunderscore"
     },
