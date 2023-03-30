@@ -207,28 +207,6 @@ a {
     width: 400px;
 }
 
-.amazon {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-    .amazon .link-icon {
-        display: block;
-        margin: 0;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    .amazon .link-icon-image {
-        display: inline-block;
-        width: 180px;
-        height: 180px;
-    }
-
-    .amazon .link-text {
-        font-size: 2em;
-    }
-
 .schedule-frame {
     border: none;
     margin: 0;
