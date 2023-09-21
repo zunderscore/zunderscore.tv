@@ -5,6 +5,10 @@
       "redirect": "https://twitch.tv/zunderscore"
     },
     {
+      "route": "/livespace",
+      "redirect": "https://live.space/zunderscore"
+    },
+    {
       "route": "/store",
       "redirect": "/merch"
     },
@@ -17,12 +21,12 @@
       "redirect": "https://www.youtube.com/channel/UCgSndmVZGTrbrga78HzR5zA"
     },
     {
-      "route": "/mastodon",
-      "redirect": "https://mastodon.social/users/zunderscore"
+      "route": "/bluesky",
+      "redirect": "https://bsky.app/profile/zunderscore.tv"
     },
     {
-      "route": "/twitter",
-      "redirect": "https://twitter.com/zunderscore"
+      "route": "/mastodon",
+      "redirect": "https://mastodon.social/users/zunderscore"
     },
     {
       "route": "/instagram",
