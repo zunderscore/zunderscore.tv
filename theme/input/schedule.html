@@ -2,7 +2,7 @@ Title: "#zunderstream Schedule"
 Description: "Check out what's coming up soon on the #zunderstream"
 ---
 <div class="content-title">#zunderstream Schedule</div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" />
 <style>
     :root {
         --fc-page-bg-color: #000;
@@ -27,8 +27,8 @@ Description: "Check out what's coming up soon on the #zunderstream"
         justify-content: center;
         font-size: 2em;
     }
-    
-    #loader > div {
+
+    #loader>div {
         display: block;
     }
 
@@ -37,6 +37,7 @@ Description: "Check out what's coming up soon on the #zunderstream"
         height: 80px;
         margin-bottom: 20px;
     }
+
     .lds-dual-ring:after {
         content: " ";
         display: block;
@@ -48,10 +49,12 @@ Description: "Check out what's coming up soon on the #zunderstream"
         border-color: #fff transparent #fff transparent;
         animation: lds-dual-ring 1.2s linear infinite;
     }
+
     @@keyframes lds-dual-ring {
         0% {
             transform: rotate(0deg);
         }
+
         100% {
             transform: rotate(360deg);
         }
@@ -125,9 +128,9 @@ Description: "Check out what's coming up soon on the #zunderstream"
         }
     }
 </style>
-<script src='https://github.com/mozilla-comm/ical.js/releases/download/v1.4.0/ical.js'></script>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@@fullcalendar/icalendar@5.11.0/main.global.min.js"></script>
+<script src="https://github.com/kewisch/ical.js/releases/download/v1.5.0/ical.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@@fullcalendar/icalendar@6.1.9/index.global.min.js"></script>
 <script>
 
     const MIN_WINDOW_WIDTH = 1200;
@@ -159,6 +162,7 @@ Description: "Check out what's coming up soon on the #zunderstream"
     document.addEventListener('DOMContentLoaded', function () {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
+            timeZone: 'local',
             initialView: getCalendarView(),
             contentHeight: getCalendarContentHeight(),
             aspectRatio: getCalendarAspectRatio(),
@@ -173,13 +177,13 @@ Description: "Check out what's coming up soon on the #zunderstream"
                 calendar.setOption('aspectRatio', getCalendarAspectRatio());
             },
             loading: function (isLoading) {
-                    if (isLoading) {
-                        document.getElementById('loader').style.visibility = "visible";
-                    }
-                    else {                
-                        document.getElementById('loader').style.visibility = "hidden";
-                    }
+                if (isLoading) {
+                    document.getElementById('loader').style.visibility = "visible";
                 }
+                else {
+                    document.getElementById('loader').style.visibility = "hidden";
+                }
+            }
         });
         calendar.render();
     });
