@@ -5,10 +5,6 @@
       "redirect": "https://twitch.tv/zunderscore"
     },
     {
-      "route": "/livespace",
-      "redirect": "https://live.space/zunderscore"
-    },
-    {
       "route": "/store",
       "redirect": "/merch"
     },
