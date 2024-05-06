@@ -27,7 +27,7 @@ jobs:
           dotnet-version: 8.0.100
       - run: dotnet restore ${{ env.project_name }}
       - run: dotnet build ${{ env.project_name }} --configuration Release --no-restore
-      - run: dotnet run ${{ env.project_name }} --output output
+      - run: dotnet run --output output
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
