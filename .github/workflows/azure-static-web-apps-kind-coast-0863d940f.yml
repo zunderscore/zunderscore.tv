@@ -1,5 +1,8 @@
 name: Azure Static Web Apps CI/CD
 
+env:
+  project_name: ZunderscoreTv.csproj
+
 on:
   workflow_dispatch:
   push:
@@ -22,9 +25,9 @@ jobs:
       - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 8.0.100
-      - run: dotnet restore
-      - run: dotnet build --configuration Release --no-restore
-      - run: dotnet run --output output
+      - run: dotnet restore ${{ env.project_name }}
+      - run: dotnet build ${{ env.project_name }} --configuration Release --no-restore
+      - run: dotnet run ${{ env.project_name }} --output output
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
