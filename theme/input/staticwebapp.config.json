@@ -13,6 +13,10 @@
       "redirect": "https://discord.gg/SgRS43thZM"
     },
     {
+      "route": "/github",
+      "redirect": "https://github.com/zunderscore"
+    },
+    {
       "route": "/youtube",
       "redirect": "https://www.youtube.com/channel/UCgSndmVZGTrbrga78HzR5zA"
     },
