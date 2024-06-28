@@ -71,10 +71,6 @@
     {
       "route": "/mediakit",
       "rewrite": "/docs/mediakit.pdf"
-    },
-    {
-      "route": "/store/onesies",
-      "redirect": "https://store.zunderscore.tv/#!/kids+%26+babies+baby+bodysuits?q=P43"
     }
   ]
 }
