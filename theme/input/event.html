@@ -1,0 +1,97 @@
+Title: STREAMIVERSARY 4
+Description: Join zunderscore on December 14, 2024 at 10AM ET for Streamiversary 4!
+---
+<style type="text/css">
+    .event-main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 500px;
+    }
+
+    #background-flower {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        user-select: none;
+    }
+
+    #event-title {
+        font-size: 48px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+
+    #event-subtitle {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    #countdown {
+        font-size: 72px;
+        font-weight: bold;
+    }
+
+    @@media (max-width: 750px) {
+        #event-title {
+            font-size: 36px;
+        }
+
+        #event-subtitle {
+            font-size: 24px;
+        }
+
+        #countdown {
+            font-size: 48px;
+        }
+
+        #background-flower {
+            width: 300px;
+        }
+    }
+</style>
+
+<div class="event-main">
+    <img id="background-flower" src="./images/retro-flower.svg" />
+    <div id="event-title">Streamiversary 4</div>
+    <div id="countdown">14:00:00:00</div>
+    <div id="event-subtitle">December 14, 2024 10AM ET</div>
+</div>
+
+<script>
+    const EVENT_DATE = new Date(1734188400000);
+
+    function updateCounter() {
+        const currentDate = Date.now();
+        const diffTime = Math.abs(EVENT_DATE - currentDate);
+
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+        const diffHours = Math.floor(diffTime / (1000 * 60 * 60))
+            - (diffDays * 24);
+
+        const diffMinutes = Math.floor(diffTime / (1000 * 60))
+            - ((diffDays * 60 * 24) + (diffHours * 60));
+
+        const diffSeconds = Math.floor(diffTime / (1000))
+            - ((diffDays * 60 * 60 * 24) + (diffHours * 60 * 60) + (diffMinutes * 60));
+
+        const countdownText = diffDays > 0
+            ? `${String(diffDays).padStart(2, "0")}:${String(diffHours).padStart(2, "0")}:${String(diffMinutes).padStart(2, "0")}:${String(diffSeconds).padStart(2, "0")}`
+            : `${String(diffHours).padStart(2, "0")}:${String(diffMinutes).padStart(2, "0")}:${String(diffSeconds).padStart(2, "0")}`;
+
+        document.getElementById("countdown").innerText = countdownText;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        updateCounter();
+        setInterval(updateCounter, 1000);
+    });
+</script>
