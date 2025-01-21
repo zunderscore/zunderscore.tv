@@ -33,20 +33,12 @@
       "redirect": "https://mastodon.social/users/zunderscore"
     },
     {
-      "route": "/instagram",
-      "redirect": "https://www.instagram.com/zunderscore"
-    },
-    {
       "route": "/teams",
       "redirect": "https://teams.live.com/l/invite/FAAtnDfmbHDK2haWwI"
     },
     {
       "route": "/soundcloud",
       "redirect": "https://soundcloud.com/zunderscore"
-    },
-    {
-      "route": "/humble",
-      "redirect": "https://www.humblebundle.com/?partner=zunderscore&charity=1981193"
     },
     {
       "route": "/ko-fi",
